@@ -3,7 +3,6 @@ services:
   - docker
 branches:
   only:
-    - develop
     - master
 before_install:
   - docker pull microsoft/azure-cli:0.10.0
