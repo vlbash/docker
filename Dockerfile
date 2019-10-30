@@ -12,7 +12,7 @@ RUN wget -P /root/src http://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz
 RUN cd /root/src; tar xvf ruby-2.2.2.tar.gz
 RUN cd /root/src/ruby-2.2.2; ./configure; make install
 
-RUN gem update --system
+#RUN gem update --system
 RUN gem install bundler
 
 RUN git clone https://github.com/travis-ci/docker-sinatra /root/sinatra
